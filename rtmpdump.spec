@@ -1,14 +1,14 @@
-%define		gitrev	19d36368f6c1ec6fa55df319173ca93048309f9a
+%define		gitrev	dc76f0a8461e6c8f1277eba58eae201b2dc1d06a
 
 Summary:	A utility for getting files from RTMP servers
 Name:		rtmpdump
 Version:	2.4
-Release:	0.%{gitrev}.1
+Release:	0.%{gitrev}.2
 License:	GPL v2
 Group:		Applications/Networking
-#Source0:	http://rtmpdump.mplayerhq.hu/download/%{name}-%{version}.tgz
+# git://git.ffmpeg.org/rtmpdump
 Source0:	%{name}-%{version}-%{gitrev}.tar.xz
-# Source0-md5:	72421f7b1fbf3f9ddd0bf4ccc758741c
+# Source0-md5:	87b34e5a69e251fdf9d681236594a9f6
 URL:		http://rtmpdump.mplayerhq.hu/
 BuildRequires:	gnutls-devel
 BuildRequires:	libtool
@@ -78,7 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files libs
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/librtmp.so.0
+%attr(755,root,root) %{_libdir}/librtmp.so.1
 
 %files devel
 %defattr(644,root,root,755)
