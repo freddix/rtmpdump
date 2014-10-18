@@ -1,9 +1,11 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/rtmpdump.git
+
 %define		gitrev	dc76f0a8461e6c8f1277eba58eae201b2dc1d06a
 
 Summary:	A utility for getting files from RTMP servers
 Name:		rtmpdump
 Version:	2.4
-Release:	0.%{gitrev}.2
+Release:	0.%{gitrev}.3
 License:	GPL v2
 Group:		Applications/Networking
 # git://git.ffmpeg.org/rtmpdump
